@@ -28,4 +28,4 @@ Actual screenshots cover full homepage, desktop/mobile viewports, clinician prof
 
 ## Scope
 
-The completed deliverable is a local frontend portfolio demonstration. Real appointment integration, verified clinical content, complete Arabic localization, assisted-technology user testing, physical-device/cross-browser review and deployment are future work. No commercial results or compliance certification are claimed.
+The completed deliverable is a frontend portfolio demonstration with a public Netlify demo linked in README.md. Real appointment integration, verified clinical content, complete Arabic localization, assisted-technology user testing and physical-device/cross-browser review remain future work. No commercial results or compliance certification are claimed.

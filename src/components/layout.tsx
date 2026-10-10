@@ -111,7 +111,7 @@ export function Layout() {
               <p className="mt-6 max-w-xs text-sage-light leading-relaxed">
                 A little more time. A little more understanding. Care built around you.
               </p>
-              <span className="footer-demo">Fictional medical center · Portfolio project</span>
+              <span className="footer-demo">Fictional medical center </span>
             </div>
             <div>
               <h2>Discover the center</h2>

@@ -6,4 +6,4 @@
 4. [x] Inspect screenshots and motion frames; fix text contrast and mobile heading spacing; verify workflows, nine viewport widths and accessibility.
 5. [x] Build production output, refresh screenshots and measurements, document implementation and open the local preview.
 
-The user's redesign brief expressly authorizes normal design and implementation decisions without approval pauses. Work is performed in the existing workspace. There is no Git repository; no commits or publishing are claimed. The frontend remains a fictional, memory-only demonstration.
+The user's redesign brief expressly authorizes normal design and implementation decisions without approval pauses. Work was performed in the existing workspace; the redesign itself did not create commits or publish the site. The project now has a GitHub repository and a verified public Netlify demo, linked in README.md. The frontend remains a fictional, memory-only demonstration.

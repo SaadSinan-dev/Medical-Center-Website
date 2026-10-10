@@ -26,4 +26,4 @@ The redesign used source inspection, local UI/motion guidance, native React/CSS 
 
 Run instructions and deployment fallbacks are in README.md. Design and motion rationale are in DESIGN.md. QA.md and the JSON reports document evidence; screenshots contain the current application. ASSETS.md retains image provenance and original prompts.
 
-The center and clinicians remain fictional. Arabic branding is implemented; full Arabic translation is not. There is no real backend, availability service, email delivery or public deployment. Assisted-technology user testing and physical-device/Safari/Firefox validation remain outside this delivery.
+The center and clinicians remain fictional. Arabic branding is implemented; full Arabic translation is not. There is no real backend, availability service or email delivery. A public Netlify frontend demo is now available and was checked during the README audit; current repository and demo links are in README.md. Assisted-technology user testing and physical-device/Safari/Firefox validation remain outside this delivery.

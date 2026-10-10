@@ -36,4 +36,8 @@ Run the commands in README.md. `qa-results.json` contains browser outcomes; `acc
 
 ## Limits
 
-These checks are evidence, not blanket WCAG certification. Physical devices, Safari/Firefox, screen-reader user sessions, all text-spacing/zoom combinations and real medical/backend services were not tested. No deployment or real booking is claimed. Local unthrottled timing observations are not field Core Web Vitals or Lighthouse scores.
+During the README audit on 10 October 2026, linting, type checks, 15 unit/component tests and the production build passed again. The first browser run hit the configured 45-second context-teardown timeout during the accessibility check; a separate rerun with no concurrent checks passed all 18 tests without application or test-code changes. The JSON report contains that successful rerun. Browser execution refreshed the booking review, confirmation and mobile screenshots.
+
+The public Netlify demo was separately checked at the homepage, services, a clinician profile and the doctor-preselected appointment route. Each direct visit returned HTTP 200 and rendered the expected heading with no page errors. That smoke check does not imply that the full local browser suite ran against the deployment.
+
+These checks are evidence, not blanket WCAG certification. Physical devices, Safari/Firefox, screen-reader user sessions, all text-spacing/zoom combinations and real medical/backend services were not tested. No real booking is claimed. Local unthrottled timing observations are not field Core Web Vitals or Lighthouse scores.

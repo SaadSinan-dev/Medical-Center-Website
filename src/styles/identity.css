@@ -1,0 +1,217 @@
+/* Shared Damascus identity, applied across every route. */
+:root {
+  --color-forest: #123f3c;
+  --color-ivory: #f8f7f3;
+  --color-ink: #203e3b;
+  --color-sage: #527970;
+  --color-sage-light: #c7ddd4;
+  --color-muted: #52645e;
+  --color-line: #d5dfd9;
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --motion-fast: 180ms;
+  --motion-medium: 320ms;
+  --motion-reveal: 650ms;
+}
+.container {
+  width: min(1600px, calc(100% - 128px));
+  max-width: none;
+}
+.brand {
+  gap: 12px;
+}
+.brand-mark {
+  width: 44px;
+  height: 44px;
+}
+.brand-word {
+  font-family: var(--font-sans);
+  font-size: 25px;
+  letter-spacing: -0.055em;
+  line-height: 1.05;
+  font-weight: 600;
+}
+.brand-name {
+  display: block;
+}
+.brand-tag {
+  font-size: 8px;
+  letter-spacing: 0.22em;
+  margin-top: 5px;
+}
+.brand-arabic {
+  display: block;
+  font-family: Tahoma, Arial, sans-serif;
+  font-size: 12px;
+  letter-spacing: 0;
+  font-weight: 400;
+  margin-top: 6px;
+  text-align: left;
+}
+.topline {
+  background: var(--color-forest);
+  padding-block: 7px;
+  font-size: 9px;
+  letter-spacing: 0.12em;
+}
+.topline-demo {
+  letter-spacing: 0.01em;
+  color: var(--color-sage-light);
+}
+.site-header {
+  background: var(--color-ivory);
+  border-color: var(--color-line);
+}
+.header-inner {
+  min-height: 104px;
+}
+.desktop-nav {
+  gap: 29px;
+  font-size: 12px;
+}
+.desktop-nav a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 3px;
+  height: 1px;
+  background: var(--color-forest);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform var(--motion-medium) var(--ease-out);
+}
+.desktop-nav a.active::after,
+.desktop-nav a:hover::after {
+  width: auto;
+  height: 1px;
+  left: 0;
+  bottom: 3px;
+  border-radius: 0;
+  transform: scaleX(1);
+}
+.button {
+  border-radius: 2px;
+  min-height: 52px;
+}
+.header-book {
+  min-height: 46px;
+}
+.site-footer {
+  background: var(--color-forest);
+}
+.footer-main {
+  grid-template-columns: 1.15fr 0.75fr 1.1fr 1fr;
+  gap: 48px;
+  padding-bottom: 56px;
+}
+.footer-main > div > h2 {
+  font-size: 12px;
+}
+.footer-main > div > a:not(:first-child) {
+  font-size: 12px;
+}
+.footer-bottom {
+  font-size: 11px;
+}
+.faq-answer {
+  color: var(--color-muted);
+  font-size: 13px;
+  line-height: 1.9;
+  padding: 0 30px 24px 0;
+}
+.page-intro {
+  border-color: var(--color-line);
+}
+@media (max-width: 1199px) {
+  .container {
+    width: calc(100% - 72px);
+  }
+  .desktop-nav {
+    gap: 18px;
+    font-size: 11px;
+  }
+  .header-inner {
+    gap: 18px;
+  }
+  .header-book {
+    padding-inline: 14px;
+  }
+  .brand-word {
+    font-size: 23px;
+  }
+  .brand-mark {
+    width: 38px;
+    height: 38px;
+  }
+}
+@media (max-width: 1023px) {
+  .header-inner {
+    min-height: 92px;
+  }
+  .footer-main {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+  .mobile-nav {
+    position: absolute;
+    width: 100%;
+    background: var(--color-ivory);
+    box-shadow: 0 20px 25px #123f3c15;
+    max-height: calc(100dvh - 130px);
+    overflow-y: auto;
+  }
+}
+@media (max-width: 767px) {
+  .container {
+    width: calc(100% - 40px);
+  }
+  .header-inner {
+    min-height: 88px;
+  }
+  .brand-word {
+    font-size: 23px;
+  }
+  .brand-tag {
+    font-size: 7px;
+  }
+  .brand-arabic {
+    font-size: 11px;
+  }
+  .brand-mark {
+    width: 35px;
+    height: 35px;
+  }
+  .header-book {
+    display: none;
+  }
+  .topline {
+    font-size: 8px;
+    letter-spacing: 0.09em;
+    text-align: center;
+  }
+  .topline .container {
+    justify-content: center;
+  }
+  .footer-main {
+    gap: 32px;
+    grid-template-columns: 1fr 1fr;
+  }
+  .footer-main > div:first-child {
+    grid-column: 1 / -1;
+  }
+  .footer-main > div:last-child {
+    grid-column: 1 / -1;
+  }
+  .footer-hours {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+@media (max-width: 359px) {
+  .container {
+    width: calc(100% - 32px);
+  }
+  .footer-main {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,202 @@
+/* One motion vocabulary. No dependency, hidden-content class, scroll listener or scroll-jacking. */
+@keyframes enter {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes image-reveal {
+  from {
+    clip-path: inset(0 0 0 100%);
+  }
+  to {
+    clip-path: inset(0);
+  }
+}
+@keyframes image-settle {
+  from {
+    transform: scale(1.055);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+@keyframes menu-enter {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.hero-enter {
+  animation: enter 750ms var(--ease-out) both;
+}
+.hero-enter-1 {
+  animation-delay: 60ms;
+}
+.hero-enter-2 {
+  animation-delay: 150ms;
+}
+.hero-enter-3 {
+  animation-delay: 250ms;
+}
+.hero-enter-4 {
+  animation-delay: 350ms;
+}
+.hero-enter-5 {
+  animation-delay: 450ms;
+}
+.dm-image-mask {
+  animation: image-reveal 950ms var(--ease-out) both;
+}
+.dm-image-mask img {
+  animation: image-settle 1300ms var(--ease-out) both;
+}
+.button,
+.round-arrow {
+  transition:
+    background var(--motion-fast),
+    color var(--motion-fast),
+    transform var(--motion-fast) var(--ease-out);
+}
+.button:active {
+  transform: translateY(1px);
+}
+.text-link svg,
+.button svg,
+.dm-quicklinks a > svg:last-child,
+.dm-service-arrow {
+  transition: transform var(--motion-medium) var(--ease-out);
+}
+.text-link:hover svg,
+.button:hover svg,
+.dm-quicklinks a:hover > svg:last-child,
+.dm-service:hover .dm-service-arrow {
+  transform: translate(3px, -3px);
+}
+.dm-service h3 {
+  transition: color var(--motion-fast);
+}
+.dm-service:hover h3 {
+  color: var(--color-sage);
+}
+.dm-service::after {
+  content: '';
+  position: absolute;
+  top: -1px;
+  left: 0;
+  right: 0;
+  height: 1px;
+  transform: scaleX(0);
+  transform-origin: left;
+  background: var(--color-forest);
+  transition: transform var(--motion-medium) var(--ease-out);
+}
+.dm-service:hover::after,
+.dm-service:focus-visible::after {
+  transform: scaleX(1);
+}
+.portrait img {
+  transition: transform 700ms var(--ease-out);
+}
+.doctor-card:hover .portrait img {
+  transform: scale(1.018);
+  filter: none;
+}
+.dm-interior img {
+  transition: transform 900ms var(--ease-out);
+}
+.dm-interior:hover img {
+  transform: scale(1.025);
+}
+.mobile-nav {
+  animation: menu-enter var(--motion-medium) var(--ease-out);
+}
+.mobile-nav > a {
+  animation: enter 400ms var(--ease-out) backwards;
+}
+.mobile-nav > a:nth-child(2) {
+  animation-delay: 35ms;
+}
+.mobile-nav > a:nth-child(3) {
+  animation-delay: 70ms;
+}
+.mobile-nav > a:nth-child(4) {
+  animation-delay: 105ms;
+}
+.mobile-nav > a:nth-child(5) {
+  animation-delay: 140ms;
+}
+.booking-panel-content,
+.confirmation {
+  animation: enter var(--motion-medium) var(--ease-out);
+}
+.field-error,
+[role='alert'] {
+  animation: enter 180ms var(--ease-out);
+}
+.step-number,
+.specialty-option,
+.date-option,
+.time-option,
+input,
+select,
+textarea {
+  transition:
+    background var(--motion-fast),
+    border-color var(--motion-fast),
+    color var(--motion-fast);
+}
+.faq-item summary svg {
+  transition: transform var(--motion-medium) var(--ease-out);
+}
+.faq-item[open] .faq-answer {
+  animation: enter var(--motion-medium) var(--ease-out);
+}
+@supports (interpolate-size: allow-keywords) {
+  .faq-item {
+    interpolate-size: allow-keywords;
+  }
+  .faq-item::details-content {
+    height: 0;
+    opacity: 0;
+    overflow: clip;
+    transition:
+      height var(--motion-medium) var(--ease-out),
+      opacity var(--motion-medium),
+      content-visibility var(--motion-medium) allow-discrete;
+  }
+  .faq-item[open]::details-content {
+    height: auto;
+    opacity: 1;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after,
+  .faq-item::details-content {
+    animation: none !important;
+    transition-duration: 0.01ms !important;
+    transition-delay: 0ms !important;
+    scroll-behavior: auto !important;
+  }
+  .hero-enter {
+    opacity: 1;
+    transform: none;
+  }
+  .dm-image-mask {
+    clip-path: none;
+  }
+  .doctor-card:hover .portrait img,
+  .dm-interior:hover img {
+    transform: none;
+  }
+}

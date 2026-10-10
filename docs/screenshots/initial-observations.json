@@ -1,0 +1,85 @@
+{
+  "observations": [
+    {
+      "route": "/",
+      "title": "Care begins with you | Damascus Medical Center",
+      "viewport": 1440,
+      "scrollWidth": 1440,
+      "imageCount": 5,
+      "brokenImages": []
+    },
+    {
+      "route": "/services",
+      "title": "Our medical services | Damascus Medical Center",
+      "viewport": 1440,
+      "scrollWidth": 1440,
+      "imageCount": 0,
+      "brokenImages": []
+    },
+    {
+      "route": "/doctors",
+      "title": "Meet our doctors | Damascus Medical Center",
+      "viewport": 1440,
+      "scrollWidth": 1440,
+      "imageCount": 3,
+      "brokenImages": []
+    },
+    {
+      "route": "/doctors/elena-morgan",
+      "title": "Dr. Elena Morgan | Damascus Medical Center",
+      "viewport": 1440,
+      "scrollWidth": 1440,
+      "imageCount": 1,
+      "brokenImages": []
+    },
+    {
+      "route": "/appointments?doctor=elena-morgan",
+      "title": "Book a sample appointment | Damascus Medical Center",
+      "viewport": 1440,
+      "scrollWidth": 1440,
+      "imageCount": 0,
+      "brokenImages": []
+    },
+    {
+      "route": "/contact",
+      "title": "Contact & plan your visit | Damascus Medical Center",
+      "viewport": 1440,
+      "scrollWidth": 1440,
+      "imageCount": 0,
+      "brokenImages": []
+    },
+    {
+      "route": "/about",
+      "title": "The Damascus Medical Center approach | Damascus Medical Center",
+      "viewport": 1440,
+      "scrollWidth": 1440,
+      "imageCount": 1,
+      "brokenImages": []
+    },
+    {
+      "route": "/faq",
+      "title": "Your questions, answered | Damascus Medical Center",
+      "viewport": 1440,
+      "scrollWidth": 1440,
+      "imageCount": 0,
+      "brokenImages": []
+    },
+    {
+      "route": "/privacy",
+      "title": "Privacy & demonstration notice | Damascus Medical Center",
+      "viewport": 1440,
+      "scrollWidth": 1440,
+      "imageCount": 0,
+      "brokenImages": []
+    },
+    {
+      "route": "/missing-page",
+      "title": "Page not found | Damascus Medical Center",
+      "viewport": 1440,
+      "scrollWidth": 1440,
+      "imageCount": 0,
+      "brokenImages": []
+    }
+  ],
+  "errors": []
+}

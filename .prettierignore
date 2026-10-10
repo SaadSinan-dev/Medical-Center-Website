@@ -1,0 +1,8 @@
+node_modules
+dist
+test-results
+docs/screenshots
+docs/qa-results.json
+docs/accessibility-results.json
+docs/performance-results.json
+package-lock.json

@@ -1,0 +1,50 @@
+[
+  {
+    "route": "/",
+    "violations": []
+  },
+  {
+    "route": "/services",
+    "violations": []
+  },
+  {
+    "route": "/services/cardiology",
+    "violations": []
+  },
+  {
+    "route": "/doctors",
+    "violations": []
+  },
+  {
+    "route": "/doctors/elena-morgan",
+    "violations": []
+  },
+  {
+    "route": "/appointments",
+    "violations": []
+  },
+  {
+    "route": "/contact",
+    "violations": []
+  },
+  {
+    "route": "/about",
+    "violations": []
+  },
+  {
+    "route": "/faq",
+    "violations": []
+  },
+  {
+    "route": "/privacy",
+    "violations": []
+  },
+  {
+    "route": "/missing",
+    "violations": []
+  },
+  {
+    "route": "/ mobile menu",
+    "violations": []
+  }
+]

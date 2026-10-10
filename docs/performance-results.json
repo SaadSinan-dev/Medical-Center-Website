@@ -1,0 +1,32 @@
+{
+  "environment": "Local production preview in headless Edge, 1440×1000, fresh contexts, no network or CPU throttling. Lab observations, not field Core Web Vitals or Lighthouse scores.",
+  "runs": [
+    {
+      "domContentLoadedMs": 55,
+      "loadMs": 56,
+      "largestContentfulPaintMs": 200,
+      "cumulativeLayoutShift": 0.00007312744140625,
+      "initialResourceCount": 10,
+      "transferredBytes": 424329,
+      "thirdPartyRequests": []
+    },
+    {
+      "domContentLoadedMs": 49,
+      "loadMs": 49,
+      "largestContentfulPaintMs": 152,
+      "cumulativeLayoutShift": 0.00007312744140625,
+      "initialResourceCount": 11,
+      "transferredBytes": 530733,
+      "thirdPartyRequests": []
+    },
+    {
+      "domContentLoadedMs": 51,
+      "loadMs": 52,
+      "largestContentfulPaintMs": 148,
+      "cumulativeLayoutShift": 0.00007312744140625,
+      "initialResourceCount": 11,
+      "transferredBytes": 530733,
+      "thirdPartyRequests": []
+    }
+  ]
+}

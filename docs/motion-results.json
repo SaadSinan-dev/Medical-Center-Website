@@ -1,0 +1,140 @@
+{
+  "frames": [
+    {
+      "time": 200,
+      "animations": [
+        {
+          "name": "enter",
+          "currentTime": 200,
+          "duration": 750
+        },
+        {
+          "name": "enter",
+          "currentTime": 200,
+          "duration": 750
+        },
+        {
+          "name": "enter",
+          "currentTime": 200,
+          "duration": 750
+        },
+        {
+          "name": "enter",
+          "currentTime": 200,
+          "duration": 750
+        },
+        {
+          "name": "enter",
+          "currentTime": 200,
+          "duration": 750
+        },
+        {
+          "name": "image-reveal",
+          "currentTime": 200,
+          "duration": 950
+        },
+        {
+          "name": "image-settle",
+          "currentTime": 200,
+          "duration": 1300
+        },
+        {
+          "name": "enter",
+          "currentTime": 200,
+          "duration": 750
+        }
+      ]
+    },
+    {
+      "time": 550,
+      "animations": [
+        {
+          "name": "enter",
+          "currentTime": 550,
+          "duration": 750
+        },
+        {
+          "name": "enter",
+          "currentTime": 550,
+          "duration": 750
+        },
+        {
+          "name": "enter",
+          "currentTime": 550,
+          "duration": 750
+        },
+        {
+          "name": "enter",
+          "currentTime": 550,
+          "duration": 750
+        },
+        {
+          "name": "enter",
+          "currentTime": 550,
+          "duration": 750
+        },
+        {
+          "name": "image-reveal",
+          "currentTime": 550,
+          "duration": 950
+        },
+        {
+          "name": "image-settle",
+          "currentTime": 550,
+          "duration": 1300
+        },
+        {
+          "name": "enter",
+          "currentTime": 550,
+          "duration": 750
+        }
+      ]
+    },
+    {
+      "time": 1300,
+      "animations": [
+        {
+          "name": "enter",
+          "currentTime": 1300,
+          "duration": 750
+        },
+        {
+          "name": "enter",
+          "currentTime": 1300,
+          "duration": 750
+        },
+        {
+          "name": "enter",
+          "currentTime": 1300,
+          "duration": 750
+        },
+        {
+          "name": "enter",
+          "currentTime": 1300,
+          "duration": 750
+        },
+        {
+          "name": "enter",
+          "currentTime": 1300,
+          "duration": 750
+        },
+        {
+          "name": "image-reveal",
+          "currentTime": 1300,
+          "duration": 950
+        },
+        {
+          "name": "image-settle",
+          "currentTime": 1300,
+          "duration": 1300
+        },
+        {
+          "name": "enter",
+          "currentTime": 1300,
+          "duration": 750
+        }
+      ]
+    }
+  ],
+  "reducedMotionAnimations": 0
+}
